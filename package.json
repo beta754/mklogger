@@ -1,0 +1,32 @@
+{
+  "name": "@ninjs/mklogger",
+  "version": "1.0.3",
+  "description": "A simple logging wrapper around Winston.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "prepare": "npm run build",
+    "release": "npm version minor && npm publish --access=public",
+    "nextVersion": "npm version patch --git-tag-version=false",
+    "vp": "npm run nextVersion && npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beta754/mklogger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beta754/mklogger/issues"
+  },
+  "homepage": "https://github.com/beta754/mklogger#readme",
+  "dependencies": {
+    "winston": "^3.17.0",
+    "winston-elasticsearch": "^0.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.7",
+    "typescript": "^5.8.3"
+  }
+}
